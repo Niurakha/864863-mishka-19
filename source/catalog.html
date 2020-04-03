@@ -9,7 +9,7 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="https://via.placeholder.com/86x35.svg" width="86" height="35"
         alt="Логотип сайта Мишка">
     </a>
@@ -21,7 +21,7 @@
             <a>Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Вязание на заказ</a>
+            <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a href="#">Поиск по сайту</a>
@@ -39,37 +39,56 @@
     <section class="catalog">
       <ul class="catalog__list toys-list">
         <li class="toys-list__item">
-          <a class="toys-list__link" href="#">
-            <img class="toys-list__image" src="https://via.placeholder.com/260x195.jpg" width="260" height="195"
+          <a class="toys-list__item-link" href="#">
+            <img class="toys-list__item-image" src="https://via.placeholder.com/260x195.jpg" width="260" height="195"
               alt="Фото игрушки Зайчик-попрыгайчик">
-            <h3 class="toys-list__title">Зайчик-попрыгайчик</h3>
           </a>
+          <h3 class="toys-list__title">
+            <a class="toys-list__title-link" href="#">Зайчик-попрыгайчик</a>
+          </h3>
           <p class="toys-list__options">Рост 30 см, вес 200 г</p>
           <p class="toys-list__price">1 200 руб.</p>
         </li>
         <li class="toys-list__item">
-          <a class="toys-list__link" href="#">
-            <img class="toys-list__image" src="https://via.placeholder.com/260x195.jpg" width="260" height="195"
+          <a class="toys-list__item-link" href="#">
+            <img class="toys-list__item-image" src="https://via.placeholder.com/260x195.jpg" width="260" height="195"
               alt="Фото корзинки для белья">
-            <h3 class="toys-list__title">Корзинка для белья</h3>
           </a>
+          <h3 class="toys-list__title">
+            <a class="toys-list__title-link" href="#">Корзинка для белья</a>
+          </h3>
           <p class="toys-list__options">Диаметр 15 см, высота 10 см</p>
           <p class="toys-list__price">690 руб.</p>
         </li>
         <li class="toys-list__item">
-          <a class="toys-list__link" href="#">
-            <img class="toys-list__image" src="https://via.placeholder.com/260x195.jpg" width="260" height="195"
+          <a class="toys-list__item-link" href="#">
+            <img class="toys-list__item-image" src="https://via.placeholder.com/260x195.jpg" width="260" height="195"
               alt="Фото корзинки для игрушек">
-            <h3 class="toys-list__title">Большая корзинка для игрушек</h3>
           </a>
+          <h3 class="toys-list__title">
+            <a class="toys-list__title-link" href="#">Большая корзинка для игрушек</a>
+          </h3>
           <p class="toys-list__options">Диаметр 30 см, высота 30 см</p>
           <p class="toys-list__price">690 руб.</p>
         </li>
       </ul>
     </section>
 
-    <!-- Здесь будет блок процесс производства -->
-
+    <section class="production">
+      <h2 class="production__title production-logo">Процесс производства</h2>
+      <div class="production__video">
+        <a class="production__link" href="#">
+          <img class="production__media" src="https://via.placeholder.com/260x150.jpg"
+            alt="Процесс производства корзинки">
+        </a>
+        <button class="production__button" type="button" aria-label="Запустить видео">
+          <img class="production__button-icon" src="img/icon-play.svg" width="101" height="77"
+            alt="Кнопка запуска видео">
+        </button>
+      </div>
+      <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="production__order button" href="form.html">Сделать заказ</a>
+    </section>
   </main>
 
   <footer class="page-footer">
