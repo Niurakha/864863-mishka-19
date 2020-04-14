@@ -12,17 +12,21 @@
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle btn-hidden" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__item-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -38,7 +42,7 @@
       </ul>
     </section>
 
-    <section class="promo">
+    <section class="promo wrapper">
       <h2 class="promo__title">Вязаные корзинки</h2>
       <p class="promo__caption">Товар недели</p>
       <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
@@ -63,7 +67,7 @@
       <a class="promo__order button" href="#">Заказать</a>
     </section>
 
-    <section class="features">
+    <section class="features wrapper">
       <h2 class="features__title">Коротко о нас:</h2>
       <ul class="features__list">
         <li class="features__item features__item--eco ">Экологически чистые материалы</li>
@@ -75,7 +79,7 @@
       </ul>
     </section>
 
-    <section class="reviews">
+    <section class="reviews wrapper">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item slider__item">
@@ -88,12 +92,12 @@
           <a class="reviews__user-link" href="#">@misssssiskras</a>
         </blockquote>
       </div>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <button class="reviews__prev btn-hidden" type="button">Предыдущий отзыв</button>
+      <button class="reviews__next btn-hidden" type="button">Следующий отзыв</button>
       <a class="reviews__write button" href="#">Написать</a>
     </section>
 
-    <section class="contacts">
+    <section class="contacts wrapper">
       <h2 class="contacts__title">Контакты</h2>
       <p class="contacts__email">
         <span>email:</span>
@@ -109,7 +113,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer wrapper">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -123,8 +127,8 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
+    <div class="page-footer__copyright copyright wrapper">
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
