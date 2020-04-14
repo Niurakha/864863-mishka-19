@@ -1,5 +1,5 @@
 .main-nav__toggle {
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   position: absolute;
@@ -17,7 +17,7 @@
 }
 
 .main-nav.is-open .main-nav__toggle {
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 }
