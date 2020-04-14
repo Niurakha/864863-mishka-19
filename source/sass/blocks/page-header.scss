@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid $line-grey;
+  min-height: 80px;
+}
+
+.page-header__logo {
+  display: flex;
+  width: 100px;
+  padding: 21px 5px 23px;
+  margin: 0 auto;
+}

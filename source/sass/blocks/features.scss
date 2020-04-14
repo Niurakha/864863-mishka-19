@@ -1,0 +1,24 @@
+.features {
+  padding-top: 68px;
+}
+
+.features__title {
+  @include font (25px, 700, 30px);
+  margin-top: 0;
+  margin-bottom: 86px;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  @include font (17px, 700, 20px);
+  margin-bottom: 83px;
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}
