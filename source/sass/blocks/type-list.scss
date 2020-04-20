@@ -1,0 +1,47 @@
+.type-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.type-list__item {
+  padding-left: 62px;
+  // padding-top: 10px;
+  // padding-bottom: 12px;
+  margin-bottom: 11px;
+  min-height: 50px;
+}
+
+.type-list__label {
+  @include font(17px, 700, 18px);
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    left: -62px;
+    top: -5px;
+    border-radius: 50%;
+    border: 2px solid $greyish-brown;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.type-list__input-radio {
+  &:checked {
+    + .type-list__label {
+      &::after {
+        position: absolute;
+        content: " ";
+        left: -50px;
+        top: 7px;
+        border-radius: 50%;
+        background-color: $seafoam-blue;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

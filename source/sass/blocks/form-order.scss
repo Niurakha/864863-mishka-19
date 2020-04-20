@@ -1,0 +1,10 @@
+.form-order {
+  padding-top: 23px;
+}
+
+.form-order__text {
+  @include font(13px, 400, 24px);
+  color: $greyish-brown;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
