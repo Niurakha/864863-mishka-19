@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import "fonts.scss";
 @import "variables.scss";
 @import "common.scss";
 @import "mixin.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
-@import "blocks/btn-hidden.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -18,4 +17,14 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/toys-list.scss";
+@import "blocks/production.scss";
+@import "blocks/video.scss";
+@import "blocks/page-form.scss";
+@import "blocks/form-order.scss";
+@import "blocks/form.scss";
+@import "blocks/type-list.scss";
+@import "blocks/color-list.scss";
+@import "blocks/full-name-list.scss";
