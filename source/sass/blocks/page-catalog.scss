@@ -1,0 +1,10 @@
+
+
+.page-catalog__title {
+  @include font(27px, 700, 30px);
+  margin: 0;
+  text-align: center;
+  background-color: $smoky-white;
+  padding-top: 69px;
+  padding-bottom: 75px;
+}
