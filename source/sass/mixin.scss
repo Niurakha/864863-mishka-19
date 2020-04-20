@@ -4,3 +4,8 @@
   line-height: $line-height;
 }
 
+@mixin fieldset-reset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
