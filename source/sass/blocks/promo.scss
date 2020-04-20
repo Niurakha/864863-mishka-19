@@ -1,0 +1,61 @@
+.promo {
+  padding-top: 5px;
+}
+
+.promo__title {
+  padding: 0;
+  color: $black;
+  margin-bottom: 6px;
+
+  @include font(25px, 700, 30px);
+}
+
+.promo__caption {
+  color: $seafoam-blue;
+
+  @include font(17px, 700, 20px);
+  text-transform: uppercase;
+  margin-bottom: 23px;
+  margin-top: 0;
+}
+
+.promo__description {
+  @include font(15px, 400, 24px);
+  color: $greyish-brown;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.promo__table {
+  @include font(15px, 400, 20px);
+  width: 100%;
+  color: $greyish-brown;
+  border-collapse: collapse;
+  margin-bottom: 26px;
+}
+
+.promo__table tr {
+  border-bottom: 1px solid $grey;
+  vertical-align: baseline;
+}
+
+.promo__option {
+  width: 96px;
+  padding: 10px 0;
+}
+
+.promo__image {
+  margin-bottom: 20px;
+}
+
+.promo__price {
+  @include font(17px, 700, 24px);
+  color: $greyish-brown;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.promo__order {
+  padding: 14px 0;
+}

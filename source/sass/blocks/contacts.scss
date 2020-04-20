@@ -1,0 +1,45 @@
+.contacts {
+  padding-top: 85px;
+  padding-bottom: 40px;
+}
+
+.contacts__title {
+  @include font(18px, 700, 30px);
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.contacts__email {
+  @include font(15px, 400, 30px);
+  color: $greyish-brown;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__email span {
+  margin-right: 25px;
+}
+
+.contacts__email-link {
+  color: inherit;
+  border-bottom: 1px solid $seafoam-blue;
+  padding-bottom: 4px;
+}
+
+.contacts__address {
+  @include font(15px, 400, 30px);
+  color: $greyish-brown;
+  margin-top: 0;
+  display: flex;
+}
+
+.contacts__address span {
+  margin-right: 30px;
+}
+
+// .contacts__map {}
+
+.contacts__write-us {
+  @include font(18px, 700, 20px);
+  padding: 14px 0;
+}

@@ -1,0 +1,28 @@
+.full-name-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.full-name-list__item {
+  margin-bottom: 23px;
+}
+
+.full-name-list__label {
+  @include font(17px, 700, 18px);
+  display: block;
+}
+
+.full-name-list__input {
+  border: none;
+  border-bottom: 2px solid $black;
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 16px;
+
+  &::placeholder {
+    @include font(17px, 400, 18px);
+    color: $greyish-brown;
+    opacity: 0.3;
+  }
+}

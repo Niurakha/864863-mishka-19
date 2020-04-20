@@ -1,0 +1,136 @@
+// .form__fieldset {
+//   margin-bottom: 29px;
+// }
+
+.form__fieldset-type {
+  @include fieldset-reset;
+  margin-bottom: 4px;
+
+  .form__legend {
+    margin-bottom: 30px;
+  }
+}
+
+.form__legend {
+  @include font(17px, 700, 16px);
+  color: $seafoam-blue;
+  text-transform: uppercase;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 198px;
+    height: 1px;
+    background-color: $seafoam-blue;
+    left: 63px;
+    top: 8px;
+  }
+}
+
+
+.form__fieldset-color {
+  @include fieldset-reset;
+  margin-bottom: 10px;
+
+  .form__legend {
+    margin-bottom: 25px;
+  }
+}
+
+.form__fieldset-name {
+  @include fieldset-reset;
+  margin-bottom: 9px;
+
+  .form__legend {
+    margin-bottom: 29px;
+  }
+}
+
+.form__fieldset-phone {
+  @include fieldset-reset;
+  margin-bottom: 32px;
+
+  .form__legend {
+    margin-bottom: 8px;
+  }
+}
+
+.form__phone-input {
+  border: none;
+  border-bottom: 2px solid $black;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 15px;
+
+  &::placeholder {
+    @include font(19px, 400, 18px);
+    color: $greyish-brown;
+    opacity: 0.3;
+  }
+}
+
+// .form__phone-input--icon {}
+
+.form__fieldset-email {
+  @include fieldset-reset;
+  margin-bottom: 32px;
+
+  .form__legend {
+    margin-bottom: 9px;
+  }
+}
+
+.form__email-input {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &::placeholder {
+    @include font(17px, 400, 18px);
+    color: $greyish-brown;
+    opacity: 0.3;
+  }
+}
+
+// .form__email-input--icon {}
+
+.form__fieldset-letter {
+  @include fieldset-reset;
+  margin-bottom: 11px;
+
+  .form__legend {
+    margin-bottom: 25px;
+  }
+}
+
+.form__letter-field {
+  border: 2px solid $greyish-brown;
+  padding: 15px;
+  width: 100%;
+  min-height: 142px;
+
+  &::placeholder {
+    @include font(17px, 400, 18px);
+    color: $greyish-brown;
+    opacity: 0.3;
+  }
+}
+
+.form__text {
+  @include font(14px, 400, 16px);
+  color: $greyish-brown;
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
+.form__button {
+  background-color: transparent;
+  padding: 14px 45px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  width: 100%;
+}
