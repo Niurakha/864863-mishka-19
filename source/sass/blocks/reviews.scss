@@ -44,7 +44,7 @@
   background-position: center;
   width: 130px;
   height: 52px;
-  border: 1px solid $line-grey;
+  border: 1px solid $grey;
   border-right-width: 0.5px;
 }
 
@@ -57,11 +57,11 @@
   background-position: center;
   width: 130px;
   height: 52px;
-  border: 1px solid $line-grey;
+  border: 1px solid $grey;
   border-left-width: 0.5px;
 }
 
 .reviews__write {
   @include font(18px, 700, 20px);
-  color: $greyish-brown;
+  padding: 14px 0;
 }

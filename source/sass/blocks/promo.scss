@@ -11,7 +11,7 @@
 }
 
 .promo__caption {
-  color: $product-week;
+  color: $seafoam-blue;
 
   @include font(17px, 700, 20px);
   text-transform: uppercase;
@@ -35,7 +35,7 @@
 }
 
 .promo__table tr {
-  border-bottom: 1px solid $line-grey;
+  border-bottom: 1px solid $grey;
   vertical-align: baseline;
 }
 

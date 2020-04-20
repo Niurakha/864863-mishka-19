@@ -3,7 +3,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -20px;
-  background-color: $bg-intro;
+  background-color: $ghostly-white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -30,11 +30,11 @@
 }
 
 .main-intro__item--interior {
-  background-color: $bg-interior;
+  background-color: $seafoam-blue;
 }
 
 .main-intro__item--toys {
-  background-color: $bg-toys;
+  background-color: $greeny-blue;
 }
 
 
