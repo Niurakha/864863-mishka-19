@@ -23,10 +23,15 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 206px;
 }
 
 .main-intro__item {
-  min-height: 103px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .main-intro__item--interior {
@@ -39,8 +44,11 @@
 
 
 .main-intro__item-link {
+  @include font (19px, 700, 24px);
+
   text-decoration: none;
   color: $white;
-
-  @include font (19px, 700, 24px);
+  width: 177px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
