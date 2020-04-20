@@ -31,7 +31,7 @@
   &:checked {
     + .color-list__label {
       &::before {
-        background-image: url("../../img/icon-tick.svg");
+        background-image: url("../img/icon-tick.svg");
         background-repeat: no-repeat;
         background-size: 22px 16px;
         background-position: 50%;
