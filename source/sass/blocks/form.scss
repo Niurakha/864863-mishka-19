@@ -1,7 +1,3 @@
-// .form__fieldset {
-//   margin-bottom: 29px;
-// }
-
 .form__fieldset-type {
   @include fieldset-reset;
   margin-bottom: 4px;
@@ -28,7 +24,6 @@
     top: 8px;
   }
 }
-
 
 .form__fieldset-color {
   @include fieldset-reset;
