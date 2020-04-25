@@ -7,16 +7,23 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    min-height: 740px;
+  }
 }
 
 .main-intro__title {
-  color: $black;
-
   @include font(27px, 700, 30px);
   text-align: center;
   margin: 0;
   padding: 69px 30px 15px;
   min-height: 282px;
+
+  @media (min-width: $tablet-width) {
+    @include font(43px, 700, 50px);
+  }
 }
 
 .main-intro__list {
@@ -47,7 +54,9 @@
 
   text-decoration: none;
   color: $white;
-  width: 177px;
-  padding-left: 28px;
-  padding-right: 28px;
+  width: 100%;
+  padding-top: 23px;
+  padding-right: 118px;
+  padding-bottom: 32px;
+  padding-left: 27px;
 }

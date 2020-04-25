@@ -1,6 +1,15 @@
 .page-header {
   border-bottom: 1px solid $grey;
   min-height: 80px;
+
+  @media (min-width: $tablet-width) {
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+  }
 }
 
 .page-header__logo {
@@ -8,4 +17,16 @@
   width: 100px;
   padding: 21px 5px 23px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 115px;
+  }
 }
+
+
+// .page-header {
+//   &__logo {}
+
+//   &__logo-image {}
+// }
