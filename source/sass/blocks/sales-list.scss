@@ -1,1 +1,15 @@
-@media mobile
+.sales-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.sales-list__link {
+  @include font(15px, 700, 24px);
+  display: block;
+  color: $black;
+}

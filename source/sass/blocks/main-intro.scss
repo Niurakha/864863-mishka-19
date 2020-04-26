@@ -4,13 +4,13 @@
   background-repeat: no-repeat;
   background-position: 50% -20px;
   background-color: $ghostly-white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet@1x.jpg");
-    min-height: 740px;
+    min-height: 745px;
+    background-position: 50% 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -23,6 +23,16 @@
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
+    padding-top: 153px;
+    flex-grow: 1;
+  }
+}
+
+.main-intro__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 119px;
+    margin: 0 auto;
   }
 }
 
@@ -32,31 +42,51 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 206px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 668px;
+  }
 }
 
 .main-intro__item {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  height: 103px;
+
+  &--interior {
+    background-color: $seafoam-blue;
+  }
+
+  &--toys {
+    background-color: $greeny-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+
+  }
 }
 
-.main-intro__item--interior {
-  background-color: $seafoam-blue;
-}
-
-.main-intro__item--toys {
-  background-color: $greeny-blue;
-}
-
-.main-intro__item-link {
+.main-intro__link {
   @include font (19px, 700, 24px);
 
   text-decoration: none;
   color: $white;
+  display: flex;
+  justify-content: flex-start;
   width: 100%;
-  padding-top: 23px;
-  padding-right: 118px;
-  padding-bottom: 32px;
-  padding-left: 27px;
+  height: 100%;
+  padding: 0 30px;
+  align-items: center;
+
+  @media (min-width:$tablet-width) {
+    @include font (20px, 700, 30px);
+    padding: 0 36px;
+  }
+}
+
+.main-intro__text {
+  width: 120px;
 }

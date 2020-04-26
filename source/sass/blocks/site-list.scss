@@ -6,32 +6,33 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: transparent;
-    min-height: 53px;
+    min-height: 59px;
   }
+}
 
-  &__item {
-    border-top: 1px solid $grey;
+.site-list__item {
+  border-top: 1px solid $grey;
 
-    @media (min-width: $tablet-width) {
-      border-top: none;
-      width: 167px;
-    }
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    width: 167px;
   }
+}
 
-  &__item-link {
-    display: block;
+.site-list__item-link {
+  display: block;
 
-    @include font(17px, 700, 24px);
-    padding: 27px 10px;
-    color: $black;
-    margin-left: 65px;
+  @include font(17px, 700, 24px);
+  padding: 27px 10px;
+  color: $black;
+  margin-left: 65px;
 
-    @media (min-width: $tablet-width) {
-      @include font(15px, 700, 24px);
-      margin-left: 0;
-      padding: 0;
-    }
+  @media (min-width: $tablet-width) {
+    @include font(15px, 700, 24px);
+    margin-left: 0;
+    padding: 0;
   }
 }
