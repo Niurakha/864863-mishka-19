@@ -1,6 +1,7 @@
 .wrapper {
   min-width: 260px;
   padding: 0 30px;
+
   @media (min-width: $tablet-width) {
     padding: 0 50px;
   }

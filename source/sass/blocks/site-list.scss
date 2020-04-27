@@ -11,6 +11,11 @@
     background-color: transparent;
     min-height: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .site-list__item {
@@ -32,6 +37,12 @@
 
   @media (min-width: $tablet-width) {
     @include font(15px, 700, 24px);
+    margin-left: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(17px, 700, 24px);
     margin-left: 0;
     padding: 0;
   }

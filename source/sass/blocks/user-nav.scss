@@ -1,16 +1,25 @@
 .user-nav {
-  min-height: 80px;
+  min-height: 130px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 500px;
   }
 
   &--closed {
     display: none;
 
     @media (min-width: $tablet-width) {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 350px;
   }
 }
 
@@ -67,13 +76,27 @@
   }
 }
 
+.user-nav__delivery {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include font(15px, 400, 24px);
+    display: block;
+    order: 1;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+  }
+}
+
+
 // .user-nav__link-disappear {
 //   @media (min-width: $tablet-width) {
 //     display: none;
 //   }
 // }
-
-
 
 // .main-nav__item {
 //   position: relative;

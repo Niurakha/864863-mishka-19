@@ -1,11 +1,18 @@
 .main-nav {
   @media (min-width: $tablet-width) {
     order: 1;
-    min-width: 435px;
+    width: 435px;
+    margin-top: -41px;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
+    min-height: 145px;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
   }
 
   &__toggle {
@@ -46,16 +53,5 @@
 .main-nav--nojs {
   .main-nav__toggle {
     display: none;
-  }
-}
-
-.main-nav__delivery {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    @include font(15px, 400, 24px);
-    display: block;
-    order: 1;
-    margin: 0;
   }
 }
