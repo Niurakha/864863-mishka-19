@@ -73,23 +73,25 @@
         <h2 class="promo__title">Вязаные корзинки</h2>
         <p class="promo__caption">Товар недели</p>
       </div>
-      <div class="promo__body">
-        <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-          размерах.</p>
-        <table class="promo__table">
-          <tr>
-            <td class="promo__option">Цвет:</td>
-            <td class="promo__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="promo__option">Диаметр:</td>
-            <td class="promo__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="promo__option">Высота:</td>
-            <td class="promo__value">15 см</td>
-          </tr>
-        </table>
+      <div class="promo__item-wrapper">
+        <div class="promo__item">
+          <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
+          <table class="promo__table">
+            <tr>
+              <td class="promo__option">Цвет:</td>
+              <td class="promo__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="promo__option">Диаметр:</td>
+              <td class="promo__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="promo__option">Высота:</td>
+              <td class="promo__value">15 см</td>
+            </tr>
+          </table>
+        </div>
         <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
           alt="Изделие Вязаные корзинки">
         <p class="promo__price">Цена: 990 руб.</p>
@@ -110,33 +112,41 @@
     </section>
 
     <section class="reviews wrapper">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__item slider__item">
-          <p class="reviews__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-            стильными, а также набирают больше лайков!
-          </p>
-          <cite class="reviews__user">Анастасия Красильникова</cite>
-          <a class="reviews__user-link" href="#">@misssssiskras</a>
-        </blockquote>
+      <div class="reviews__wrapper">
+        <div class="reviews__body">
+          <h2 class="reviews__title">Отзывы</h2>
+          <blockquote class="reviews__item">
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+              стильными, а также набирают больше лайков!
+            </p>
+            <cite class="reviews__user">Анастасия Красильникова</cite>
+            <a class="reviews__user-link" href="#">@misssssiskras</a>
+          </blockquote>
+        </div>
+        <div class="reviews__buttons">
+          <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
+          <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
+          <a class="reviews__write button" href="#">Написать</a>
+        </div>
       </div>
-      <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
-      <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
-      <a class="reviews__write button" href="#">Написать</a>
     </section>
 
-    <section class="contacts wrapper">
-      <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__email">
-        <span>e-mail:</span>
-        <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      </p>
-      <p class="contacts__address">
-        <span>адрес:</span>
-        г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101
-      </p>
+    <section class="contacts">
+      <div class="contacts__body wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__email">
+            <span>e-mail:</span>
+            <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </p>
+          <p class="contacts__address">
+            <span>адрес:</span>
+            г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101
+          </p>
+        </div>
+      </div>
       <div class="contacts__map">
         <iframe class="contacts__map-iframe"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A356553a58019fc9e1177ca2bcdba691f6982ab320a30ca4aa89cfadcb208ff2c&amp;source=constructor"
@@ -149,35 +159,38 @@
   </main>
 
   <footer class="page-footer wrapper">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">Instagram
-            <img class="social__image-instagram" src="img/icon-insta.svg" width="22" height="21" alt="Мы в Instagram">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">Facebook
-            <img class="social__item-facebook" src="img/icon-fb.svg" width="15" height="28" alt="Мы в Facebook">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">Twitter
-            <img class="social__image-twitter" src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Twitter">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright wrapper">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <svg class="copyright__image" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
-          viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-          <path
-            d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
-        </svg>
-      </a>
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="img/logo-tablet.svg" width="102" height="34" alt="">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">Instagram
+              <img class="social__image-instagram" src="img/icon-insta.svg" width="22" height="21" alt="Мы в Instagram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Facebook
+              <img class="social__item-facebook" src="img/icon-fb.svg" width="15" height="28" alt="Мы в Facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Twitter
+              <img class="social__image-twitter" src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <svg class="copyright__image" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
+            viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path
+              d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 

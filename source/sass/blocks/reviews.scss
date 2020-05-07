@@ -1,20 +1,56 @@
 .reviews {
-  padding-top: 55px;
-  position: relative;
+  padding-top: 56px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+    padding-left: 171px;
+    padding-right: 0;
+  }
 }
 
 .reviews__wrapper {
-  margin-bottom: 118px;
+  margin-bottom: 85px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__body {
+  margin-bottom: 119px;
 }
 
 .reviews__title {
   @include font(25px, 700, 30px);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(43px, 700, 50px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 700, 57px);
+  }
 }
 
 .reviews__item {
   margin: 0;
-  padding-top: 23px;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .reviews__text {
@@ -22,18 +58,40 @@
   margin-top: 0;
   margin-bottom: 25px;
   color: $greyish-brown;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 400, 30px);
+    margin-bottom: 57px;
+  }
 }
 
 .reviews__user {
   @include font(17px, 700, 30px);
   font-style: normal;
   color: $greyish-brown;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 700, 24px);
+  }
 }
 
 .reviews__user-link {
   @include font(17px, 400, 30px);
   display: block;
   color: $greyish-brown;
+}
+
+.reviews__buttons {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    min-height: 344px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 310px;
+  }
 }
 
 .reviews__prev {
@@ -47,23 +105,40 @@
   border: 1px solid $grey;
   border-right-width: 0.5px;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    bottom: 20px;
+    right: 68px;
+  }
 }
 
 .reviews__next {
   position: absolute;
   bottom: 90px;
-  right: 31px;
+  right: 0;
   background-image: url("/img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 130px;
+  width: 131px;
   height: 52px;
   border: 1px solid $grey;
   border-left-width: 0.5px;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    bottom: 20px;
+    right: -19px;
+  }
 }
 
 .reviews__write {
   @include font(18px, 700, 20px);
   padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 700, 20px);
+    width: 175px;
+  }
 }

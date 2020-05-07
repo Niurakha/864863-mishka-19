@@ -29,15 +29,17 @@
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
-    padding-top: 153px;
+    padding-top: 0;
     width: 500px;
-    min-height: 625px;
+    min-height: 472px;
+    margin-top: 153px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(53px, 700, 57px);
     width: 640px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
