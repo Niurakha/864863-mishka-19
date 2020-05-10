@@ -2,27 +2,58 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 501px*100%/668px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px*100%/1050px;
+  }
 }
 
 .full-name-list__item {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+  }
 }
 
 .full-name-list__label {
   @include font(17px, 700, 18px);
   display: block;
+
+  @media (min-width: $tablet-width) {
+    @include font(19px, 700, 18px);
+    margin: 0 26px 0 0;
+  }
 }
 
 .full-name-list__input {
+  @include font(17px, 400, 18px);
   border: none;
   border-bottom: 2px solid $black;
   width: 100%;
-  padding-bottom: 15px;
-  padding-top: 16px;
+  padding: 16px 0 15px 0;
 
   &::placeholder {
     @include font(17px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(19px, 400, 18px);
+    padding: 16px 0 15px 16px;
+
+    &::placeholder {
+      @include font(19px, 400, 18px);
+    }
   }
 }
