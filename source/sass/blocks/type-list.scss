@@ -2,12 +2,25 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 501px*100%/668px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 875px*100%/1050px;
+  }
 }
 
 .type-list__item {
   padding-left: 62px;
   margin-bottom: 11px;
   min-height: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding-left: 80px;
+  }
 }
 
 .type-list__label {
@@ -25,6 +38,17 @@
     width: 40px;
     height: 40px;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font(19px, 700, 18px);
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      left: -80px;
+      top: -10px;
+    }
+  }
 }
 
 .type-list__input-radio {
@@ -39,6 +63,19 @@
         background-color: $seafoam-blue;
         width: 16px;
         height: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:checked {
+      + .type-list__label {
+        &::after {
+          width: 22px;
+          height: 22px;
+          left: -65px;
+          top: 5px;
+        }
       }
     }
   }

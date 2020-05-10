@@ -1,0 +1,22 @@
+.sales-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 315px;
+    justify-content: space-between;
+  }
+}
+
+
+.sales-list__link {
+  @include font(15px, 700, 24px);
+  display: block;
+  color: $black;
+}

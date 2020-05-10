@@ -1,3 +1,10 @@
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
 .form__fieldset-type {
   @include fieldset-reset;
   margin-bottom: 4px;
@@ -5,7 +12,26 @@
   .form__legend {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+
+    .form__legend {
+      padding-top: 4px;
+    }
+
+    .form__wrapper {
+      padding-top: 66px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .form__legend {
+      padding: 5px 0 0 63px;
+    }
+  }
 }
+
 
 .form__legend {
   @include font(17px, 700, 16px);
@@ -23,14 +49,36 @@
     left: 63px;
     top: 8px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 167px*100%/668px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 175px*100%/1050px;
+    padding-left: 60px;
+  }
 }
 
 .form__fieldset-color {
   @include fieldset-reset;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 
   .form__legend {
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $smoky-white;
+    margin: 0;
+
+    .form__wrapper {
+      padding-top: 66px;
+    }
   }
 }
 
@@ -41,6 +89,24 @@
   .form__legend {
     margin-bottom: 29px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+
+    .form__legend {
+      padding-top: 23px;
+    }
+
+    .form__wrapper {
+      padding-top: 44px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .form__legend {
+      padding-top: 22px;
+    }
+  }
 }
 
 .form__fieldset-phone {
@@ -49,6 +115,19 @@
 
   .form__legend {
     margin-bottom: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $smoky-white;
+    margin: 0;
+
+    .form__legend {
+      padding-top: 22px;
+    }
+
+    .form__wrapper {
+      padding-top: 44px;
+    }
   }
 }
 
@@ -64,6 +143,22 @@
     color: $greyish-brown;
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font(19px, 400, 18px);
+    background-color: inherit;
+    padding-left: 17px;
+    padding-bottom: 13px;
+    width: 75%;
+
+    &::placeholder {
+      @include font(19px, 400, 18px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px*100%/1050px;
+  }
 }
 
 // .form__phone-input--icon {}
@@ -75,9 +170,23 @@
   .form__legend {
     margin-bottom: 9px;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: $smoky-white;
+    padding-bottom: 50px;
+
+    .form__wrapper {
+      padding-top: 19px;
+    }
+
+    .form__legend {
+      padding-top: 22px;
+    }
+  }
 }
 
 .form__email-input {
+  @include font(17px, 400, 18px);
   border: none;
   border-bottom: 2px solid black;
   width: 100%;
@@ -88,6 +197,21 @@
     @include font(17px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(19px, 400, 18px);
+    background-color: inherit;
+    width: 501px*100%/668px;
+    padding-left: 16px;
+
+    &::placeholder {
+      @include font(19px, 400, 18px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px*100%/1050px;
   }
 }
 
@@ -100,9 +224,20 @@
   .form__legend {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    .form__legend {
+      padding-top: 17px;
+    }
+
+    .form__wrapper {
+      padding-top: 17px;
+    }
+  }
 }
 
 .form__letter-field {
+  @include font(17px, 400, 18px);
   border: 2px solid $greyish-brown;
   padding: 15px;
   width: 100%;
@@ -113,19 +248,60 @@
     color: $greyish-brown;
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font(19px, 400, 18px);
+    width: 501px*100%/668px;
+
+    &::placeholder {
+      @include font(19px, 400, 18px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px*100%/1050px;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    padding-top: 38px;
+  }
 }
 
 .form__text {
   @include font(14px, 400, 16px);
   color: $greyish-brown;
-  margin-top: 0;
-  margin-bottom: 31px;
+  margin: 0 0 31px 0;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 400, 30px);
+    width: 350px;
+    text-align: end;
+    padding-top: 9px;
+    margin-bottom: 0;
+  }
 }
 
 .form__button {
   background-color: transparent;
   padding: 14px 45px;
-  margin: 0 auto;
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 230px;
+    padding: 14px 5px;
+    margin: 0;
+  }
 }

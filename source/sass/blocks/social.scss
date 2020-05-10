@@ -1,6 +1,10 @@
 .social {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+  }
 }
 
 .social__list {
@@ -9,13 +13,24 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
+  width: 191px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .social__link {
   font-size: 0;
   display: block;
   padding: 10px 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .social__image--instagram {

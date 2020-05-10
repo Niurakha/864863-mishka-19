@@ -1,6 +1,20 @@
 .page-header {
-  border-bottom: 1px solid $grey;
-  min-height: 80px;
+  min-height: 78px;
+
+  @media (min-width: $tablet-width) {
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
 }
 
 .page-header__logo {
@@ -8,4 +22,15 @@
   width: 100px;
   padding: 21px 5px 23px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 115px;
+    margin-top: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin: 0;
+  }
 }

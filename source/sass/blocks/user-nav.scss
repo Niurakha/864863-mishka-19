@@ -1,0 +1,124 @@
+.user-nav {
+  min-height: 130px;
+
+  @media (min-width: $tablet-width) {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 988px) {
+    width: 500px;
+  }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 350px;
+  }
+}
+
+.user-nav__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+}
+
+.user-nav__item {
+  border-top: 1px solid $grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      width: 85px;
+
+      .user-nav__link {
+        padding: 20px 0 21px 0;
+      }
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      display: flex;
+
+      .user-nav__link {
+        padding: 31px 0 16px 82px;
+      }
+    }
+  }
+}
+
+.user-nav__link {
+  @include font(17px, 700, 24px);
+  display: block;
+  padding: 27px 10px;
+  color: $black;
+  margin-left: 65px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.user-nav__delivery {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include font(15px, 400, 24px);
+    display: block;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+  }
+}
+
+
+// .user-nav__link-disappear {
+//   @media (min-width: $tablet-width) {
+//     display: none;
+//   }
+// }
+
+// .main-nav__item {
+//   position: relative;
+
+//   &--search::before {
+//     position: absolute;
+//     content: " ";
+//     background-image: url("../../img/icon-search.svg");
+//     width: 18px;
+//     height: 18px;
+//     top: 30px;
+//     left: 32px;
+//     opacity: 0.2;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     span {
+//       display: none;
+//     }
+//   }
+// }
