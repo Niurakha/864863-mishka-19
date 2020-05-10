@@ -3,11 +3,14 @@
   margin: 0;
   text-align: center;
   background-color: $smoky-white;
-  padding-top: 69px;
-  padding-bottom: 75px;
+  padding: 69px 30px 75px;
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
     padding-top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(53px, 700, 57px);
   }
 }
