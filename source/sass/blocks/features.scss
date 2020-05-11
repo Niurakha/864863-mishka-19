@@ -3,7 +3,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding-top: 103px;
+    padding-top: 117px;
+    padding-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
-    margin-bottom: 103px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,8 +50,8 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 700, 22px);
     width: 320px;
-    margin-bottom: 111px;
-    margin-right: 14px;
+    padding-top: 67px;
+    margin: 0 14px 44px 0;
 
     &--eco {
       order: -6;

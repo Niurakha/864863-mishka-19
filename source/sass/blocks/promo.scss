@@ -7,7 +7,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 64px;
-    position: relative;
   }
 }
 
@@ -83,7 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: 800px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,6 +146,7 @@
     height: 404px;
     margin: 0 0 25px;
     padding-top: 8px;
+    position: absolute;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,7 +154,7 @@
     height: 636px;
     margin-top: 0;
     position: absolute;
-    top: 70px;
+    top: -132px;
     right: 0;
     z-index: -1;
     padding-top: 0;
