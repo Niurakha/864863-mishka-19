@@ -1,10 +1,12 @@
 .reviews {
   padding-top: 56px;
+  padding-bottom: 86px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     margin: 0 auto;
+    padding-top: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,8 +17,6 @@
 }
 
 .reviews__wrapper {
-  margin-bottom: 85px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
@@ -61,7 +61,7 @@
 
   @media (min-width: $tablet-width) {
     @include font(17px, 400, 30px);
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 }
 
@@ -108,8 +108,8 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    bottom: 20px;
-    right: 68px;
+    bottom: 14px;
+    right: 66px;
   }
 }
 
@@ -128,8 +128,8 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    bottom: 20px;
-    right: -19px;
+    bottom: 14px;
+    right: -21px;
   }
 }
 
