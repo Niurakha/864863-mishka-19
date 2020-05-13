@@ -9,6 +9,39 @@
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
 
   @include font (17px, 700, 20px);
+
+  &--brown {
+    &:hover,
+    &:focus {
+      background-color: $greyish-brown;
+      border-color: $greyish-brown;
+      color: $white;
+      outline: none;
+    }
+
+    &:active {
+      background-color: $greyish-brown;
+      border-color: $greyish-brown;
+      color: $white-30;
+    }
+  }
+
+  &--green {
+    &:hover,
+    &:focus {
+      background-color: $turquoise;
+      border: none;
+      color: $white;
+      outline: none;
+    }
+
+    &:active {
+      background-color: $greyish-brown;
+      border: none;
+      color: $white-30;
+    }
+  }
 }

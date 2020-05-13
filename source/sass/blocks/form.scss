@@ -137,11 +137,21 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 15px;
+  color: $greyish-brown;
 
   &::placeholder {
     @include font(19px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $darkSeaGreen;
+  }
+
+  &:focus {
+    border-color: $darkSeaGreen;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -192,11 +202,21 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: $greyish-brown;
 
   &::placeholder {
     @include font(17px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $darkSeaGreen;
+  }
+
+  &:focus {
+    border-color: $darkSeaGreen;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -242,11 +262,21 @@
   padding: 15px;
   width: 100%;
   min-height: 142px;
+  color: $greyish-brown;
 
   &::placeholder {
     @include font(17px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $darkSeaGreen;
+  }
+
+  &:focus {
+    border-color: $darkSeaGreen;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {

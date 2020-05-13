@@ -35,6 +35,16 @@
   color: $black;
   margin-left: 65px;
 
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     @include font(15px, 700, 24px);
     margin-left: 0;

@@ -97,7 +97,7 @@
 .reviews__prev {
   position: absolute;
   bottom: 90px;
-  background-image: url("/img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 130px;
@@ -105,11 +105,23 @@
   border: 1px solid $grey;
   border-right-width: 0.5px;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
     bottom: 14px;
-    right: 66px;
+    right: 93px;
+    width: 75px;
   }
 }
 
@@ -117,7 +129,7 @@
   position: absolute;
   bottom: 90px;
   right: 0;
-  background-image: url("/img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 131px;
@@ -125,11 +137,23 @@
   border: 1px solid $grey;
   border-left-width: 0.5px;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
     bottom: 14px;
-    right: -21px;
+    right: 8px;
+    width: 75px;
   }
 }
 

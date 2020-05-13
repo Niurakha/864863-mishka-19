@@ -20,4 +20,12 @@
 
 .copyright__image {
   fill: $seafoam-blue;
+
+  &:hover {
+    fill: $darkSeaGreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
