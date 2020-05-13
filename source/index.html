@@ -10,18 +10,18 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" tabindex="1">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
     </a>
     <!-- для открытия меню - класс main-nav--opened  -->
     <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="main-nav__toggle" type="button" tabindex="2" aria-label="Открыть меню"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
+          <a class="site-list__item-link" href="catalog.html" tabindex="3">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
+          <a class="site-list__item-link" href="form.html" tabindex="4">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list sales-list">
@@ -36,12 +36,12 @@
     <nav class="user-nav user-nav--opened">
       <ul class="user-nav__list">
         <li class="user-nav__item user-nav__item--search">
-          <a class="user-nav__link" href="#">
+          <a class="user-nav__link" href="#" tabindex="5">
             <span class="user-nav__link-disappear">Поиск по сайту</span>
           </a>
         </li>
         <li class="user-nav__item user-nav__item--cart">
-          <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+          <a class="user-nav__link" href="#" tabindex="6">Корзина: пока пуста</a>
         </li>
       </ul>
       <p class="user-nav__delivery">Бесплатная доставка по России</p>
@@ -95,7 +95,7 @@
         <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
           alt="Изделие Вязаные корзинки">
         <p class="promo__price">Цена: 990 руб.</p>
-        <a class="promo__order button" href="#">Заказать</a>
+        <a class="promo__order button button--brown" href="#">Заказать</a>
       </div>
     </section>
 
@@ -128,7 +128,7 @@
         <div class="reviews__buttons">
           <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
           <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
-          <a class="reviews__write button" href="#">Написать</a>
+          <a class="reviews__write button button--brown" href="#">Написать</a>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
         <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="320" height="457"
           alt="Мы находимся по адресу Санкт-Петербург, Большая Конюшенная, 19/8, офис 101">
       </div>
-      <a class="contacts__write-us button" href="#">Напишите нам</a>
+      <a class="contacts__write-us button button--brown" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -193,6 +193,33 @@
       </div>
     </div>
   </footer>
+
+  <section class="item-modal">
+    <h2 class="visually-hidden">Выбор размера</h2>
+    <form class="item-modal__form modal-form" action="https://echo.htmlacademy.ru" method="POST">
+      <h3 class="modal-form__title">Добавить в корзину</h3>
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__legend">
+          Выберите размер:
+        </legend>
+        <ul class="modal-form__list">
+          <li class="modal-form__item">
+            <input class="visually-hidden modal-form__input" type="radio" name="size" id="small" value="S">
+            <label class="modal-form__label" for="small">S</label>
+          </li>
+          <li class="modal-form__item">
+            <input class="visually-hidden modal-form__input" type="radio" name="size" id="middle" value="M">
+            <label class="modal-form__label" for="middle">M</label>
+          </li>
+          <li class="modal-form__item">
+            <input class="visually-hidden modal-form__input" type="radio" name="size" id="large" value="L">
+            <label class="modal-form__label" for="large">L</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="modal-form__button button button--green " type="submit">Добавить</button>
+    </form>
+  </section>
 
   <script src="js/dropdown.js"></script>
 

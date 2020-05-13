@@ -41,11 +41,21 @@
   border-bottom: 2px solid $black;
   width: 100%;
   padding: 16px 0 15px 0;
+  color: $greyish-brown;
 
   &::placeholder {
     @include font(17px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $darkSeaGreen;
+  }
+
+  &:focus {
+    border-color: $darkSeaGreen;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {

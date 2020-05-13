@@ -47,6 +47,21 @@
 .toys-list__item-link {
   display: block;
 
+  &:focus,
+  &:hover {
+    outline: none;
+
+    +.toys-list__item-body {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    +.toys-list__item-body {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
@@ -94,6 +109,14 @@
 .toys-list__title-link {
   @include font(17px, 700, 24px);
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     @include font(20px, 700, 24px);
