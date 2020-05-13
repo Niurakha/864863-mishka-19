@@ -1,0 +1,96 @@
+.modal-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  padding: 30px 29px 46px;
+  background-color: $white;
+  border: 1px solid $silver;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 33px 105px 47px;
+  }
+}
+
+.modal-form__title {
+  @include font(25px, 700, 30px);
+  color: $black;
+  text-transform: uppercase;
+  padding: 0 55px;
+  margin: 0 0 12px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font(30px, 700, 57px);
+    padding: 0;
+  }
+}
+
+.modal-form__fieldset {
+  @include fieldset-reset;
+  margin: 0 0 31px;
+}
+
+.modal-form__legend {
+  @include font(15px, 400, 30px);
+  color: $greyish-brown;
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 400, 30px);
+  }
+}
+
+.modal-form__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-form__label {
+  @include font(17px, 700, 16px);
+  display: block;
+  color: $greyish-brown;
+  border: 2px solid $grey;
+  padding: 16px 10px;
+  width: 82px;
+  text-align: center;
+
+  &:hover {
+    border-color: $silver;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $darkSeaGreen;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 115px;
+  }
+}
+
+.modal-form__input {
+  &:checked {
+    +.modal-form__label {
+      border-color: $darkSeaGreen;
+    }
+  }
+}
+
+.modal-form__button {
+  @include font(17px, 700, 16px);
+  color: $white;
+  background-color: $seafoam-blue;
+  border: none;
+  padding: 19px 0 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}

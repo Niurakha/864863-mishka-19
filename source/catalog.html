@@ -120,7 +120,7 @@
         <div class="video__wrapper">
           <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
             появляются наши товары.</p>
-          <a class="video__order button" href="form.html">Сделать заказ</a>
+          <a class="video__order button button--brown" href="form.html">Сделать заказ</a>
         </div>
       </article>
     </section>
@@ -161,6 +161,33 @@
       </div>
     </div>
   </footer>
+
+  <section class="item-modal">
+    <h2 class="visually-hidden">Выбор размера</h2>
+    <form class="item-modal__form modal-form" action="https://echo.htmlacademy.ru" method="POST">
+      <h3 class="modal-form__title">Добавить в корзину</h3>
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__legend">
+          Выберите размер:
+        </legend>
+        <ul class="modal-form__list">
+          <li class="modal-form__item">
+            <input class="visually-hidden modal-form__input" type="radio" name="size" id="small" value="S">
+            <label class="modal-form__label" for="small">S</label>
+          </li>
+          <li class="modal-form__item">
+            <input class="visually-hidden modal-form__input" type="radio" name="size" id="middle" value="M">
+            <label class="modal-form__label" for="middle">M</label>
+          </li>
+          <li class="modal-form__item">
+            <input class="visually-hidden modal-form__input" type="radio" name="size" id="large" value="L">
+            <label class="modal-form__label" for="large">L</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="modal-form__button button button--green " type="submit">Добавить</button>
+    </form>
+  </section>
 
   <script src="js/dropdown.js"></script>
 
