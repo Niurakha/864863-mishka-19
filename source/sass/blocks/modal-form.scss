@@ -77,7 +77,7 @@
 
 .modal-form__input {
   &:checked {
-    +.modal-form__label {
+    + .modal-form__label {
       border-color: $darkSeaGreen;
     }
   }

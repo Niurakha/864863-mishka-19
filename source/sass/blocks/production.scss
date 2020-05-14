@@ -1,10 +1,11 @@
 .production {
   margin: 0 auto;
   padding-top: 28px;
-  padding-bottom: 63px;
+  padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {

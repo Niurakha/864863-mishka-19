@@ -19,6 +19,7 @@
   @include font(15px, 700, 24px);
   display: block;
   color: $black;
+  transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.6;

@@ -2,7 +2,7 @@
   padding-top: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +13,7 @@
 .form-order__text {
   @include font(13px, 400, 24px);
   color: $greyish-brown;
-  margin: 0 0 24px 0;
+  margin: 0 0 8px 0;
 
   @media (min-width: $tablet-width) {
     @include font(17px, 400, 30px);

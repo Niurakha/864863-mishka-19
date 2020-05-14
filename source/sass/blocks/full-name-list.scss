@@ -18,6 +18,10 @@
 .full-name-list__item {
   margin-bottom: 23px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -42,6 +46,7 @@
   width: 100%;
   padding: 16px 0 15px 0;
   color: $greyish-brown;
+  transition: border-color 0.3s ease;
 
   &::placeholder {
     @include font(17px, 400, 18px);

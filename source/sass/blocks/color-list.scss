@@ -23,15 +23,28 @@
   padding: 9px 0 9px 62px;
   margin-bottom: 21px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     width: 200px;
-    padding: 0 0 0 81px;
+    padding: 0 0 0 93px;
     margin-bottom: 53px;
-    margin-right: 40px;
+    margin-right: 63px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 63px;
+    padding: 0 0 0 81px;
+
+    &:nth-child(2n) {
+      margin-right: 62px;
+    }
   }
 }
 
@@ -48,6 +61,7 @@
     border: 2px solid $greyish-brown;
     width: 40px;
     height: 40px;
+    transition: border-color 0.2s ease;
   }
 
   &:hover {
@@ -76,7 +90,7 @@
 
 .color-list__input-checkbox {
   &:checked {
-    +.color-list__label {
+    + .color-list__label {
       &::before {
         background-image: url("../img/icon-tick.svg");
         background-repeat: no-repeat;
@@ -87,14 +101,14 @@
   }
 
   &:focus {
-    +.color-list__label {
+    + .color-list__label {
       &::before {
         border-color: $darkSeaGreen;
       }
     }
 
     &:active {
-      +.color-list__label {
+      + .color-list__label {
         &::before {
           border-color: $silver;
         }
@@ -104,7 +118,7 @@
 
   @media (min-width: $tablet-width) {
     &:checked {
-      +.color-list__label {
+      + .color-list__label {
         &::before {
           background-size: 33px 22px;
         }

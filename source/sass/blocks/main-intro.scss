@@ -38,14 +38,17 @@
   @media (min-width: $desktop-width) {
     @include font(53px, 700, 57px);
     width: 640px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .main-intro__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -55,11 +58,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-
-  // &:hover,
-  // &:focus {
-  //   justify-content: flex-end;
-  // }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -82,7 +80,6 @@
     background-color: $seafoam-blue;
 
     .main-intro__link {
-
       &:hover,
       &:focus {
         background-color: $turquoise;
@@ -96,7 +93,6 @@
     background-color: $greeny-blue;
 
     .main-intro__link {
-
       &:hover,
       &:focus {
         background-color: $mediumTurquoise;
@@ -113,19 +109,16 @@
     &--interior {
       &:hover {
         height: 124px;
-        padding-bottom: 5px;
       }
     }
 
     &--toys {
       &:hover {
         height: 124px;
-        padding-bottom: 5px;
       }
     }
   }
 }
-
 
 .main-intro__link {
   @include font (19px, 700, 24px);
