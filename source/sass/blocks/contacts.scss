@@ -1,22 +1,25 @@
 .contacts {
-  padding-bottom: 40px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 1050px;
     margin: 0 auto;
-    height: 650px;
-    flex-direction: column;
-    padding-left: 174px;
-    padding-top: 118px;
+    padding: 59px 0 106px 171px;
+    position: relative;
   }
 }
 
 .contacts__body {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 18px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 310px;
-    margin-right: 41px;
+    width: 100%;
     margin-top: 76px;
   }
 }
@@ -29,6 +32,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin-bottom: 41px;
+    width: 35%;
   }
 }
 
@@ -39,11 +43,11 @@
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     @include font(52px, 700, 57px);
-    margin-bottom: 48px;
   }
 }
 
@@ -66,8 +70,12 @@
 .contacts__email span {
   margin-right: 25px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 22px;
   }
 }
 
@@ -75,6 +83,7 @@
   color: inherit;
   border-bottom: 1px solid $seafoam-blue;
   padding-bottom: 4px;
+  transition: color 0.3s ease;
 
   &:hover,
   &:focus {
@@ -108,8 +117,12 @@
 .contacts__address span {
   margin-right: 30px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 26px;
+    margin-right: 28px;
   }
 }
 
@@ -118,10 +131,17 @@
   height: 457px;
   margin-bottom: 38px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 525px;
     order: 1;
-    margin-top: 5px;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -147,6 +167,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-left: 5px;
   }
 }

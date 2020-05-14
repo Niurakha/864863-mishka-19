@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     .form__legend {
       padding-top: 4px;
@@ -26,8 +26,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+
     .form__legend {
       padding: 5px 0 0 63px;
+    }
+
+    .form__wrapper {
+      padding-top: 68px;
     }
   }
 }
@@ -52,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     width: 167px*100%/668px;
+    margin: 0;
 
     &::before {
       display: none;
@@ -66,7 +73,7 @@
 
 .form__fieldset-color {
   @include fieldset-reset;
-  margin: 0 0 10px 0;
+  margin: 0 0 14px 0;
 
   .form__legend {
     margin: 0 0 25px 0;
@@ -84,14 +91,14 @@
 
 .form__fieldset-name {
   @include fieldset-reset;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 
   .form__legend {
     margin-bottom: 29px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 49px;
 
     .form__legend {
       padding-top: 23px;
@@ -111,7 +118,7 @@
 
 .form__fieldset-phone {
   @include fieldset-reset;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 
   .form__legend {
     margin-bottom: 8px;
@@ -138,6 +145,7 @@
   padding-top: 16px;
   padding-bottom: 15px;
   color: $greyish-brown;
+  transition: border-color 0.3s ease;
 
   &::placeholder {
     @include font(19px, 400, 18px);
@@ -175,10 +183,15 @@
 
 .form__fieldset-email {
   @include fieldset-reset;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 
   .form__legend {
     margin-bottom: 9px;
+
+    &::before {
+      width: 179px;
+      left: 82px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -203,6 +216,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   color: $greyish-brown;
+  transition: border-color 0.3s ease;
 
   &::placeholder {
     @include font(17px, 400, 18px);
@@ -246,6 +260,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 18px;
+
     .form__legend {
       padding-top: 17px;
     }
@@ -263,6 +279,7 @@
   width: 100%;
   min-height: 142px;
   color: $greyish-brown;
+  transition: border-color 0.3s ease;
 
   &::placeholder {
     @include font(17px, 400, 18px);
@@ -305,6 +322,7 @@
   @media (min-width: $desktop-width) {
     width: 700px;
     padding-top: 38px;
+    padding-bottom: 48px;
   }
 }
 

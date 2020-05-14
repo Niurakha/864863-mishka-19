@@ -34,6 +34,8 @@
   padding: 27px 10px;
   color: $black;
   margin-left: 65px;
+  transition: opacity 0.3s ease;
+
 
   &:hover,
   &:focus {

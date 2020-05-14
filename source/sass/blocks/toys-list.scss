@@ -47,17 +47,18 @@
 .toys-list__item-link {
   display: block;
 
+
   &:focus,
   &:hover {
     outline: none;
 
-    +.toys-list__item-body {
+    + .toys-list__item-body {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
   }
 
   &:active {
-    +.toys-list__item-body {
+    + .toys-list__item-body {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     }
   }
@@ -83,6 +84,7 @@
 }
 
 .toys-list__item-body {
+  transition: box-shadow 0.3s ease;
   border: 1px solid $grey;
   padding: 24px 26px 28px;
 
