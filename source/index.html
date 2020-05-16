@@ -17,7 +17,11 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" tabindex="1">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
+      </picture>
     </a>
     <!-- для открытия меню - класс main-nav--opened  -->
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -98,8 +102,13 @@
             </tr>
           </table>
         </div>
-        <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-          alt="Изделие Вязаные корзинки">
+        <picture>
+          <source media="(min-width: 1150px)"
+            srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="promo__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+            width="260" height="315" alt="Изделие Вязаные корзинки">
+        </picture>
         <p class="promo__price">Цена: 990 руб.</p>
         <a class="promo__order button button--brown" href="#">Заказать</a>
       </div>
@@ -124,7 +133,8 @@
           <blockquote class="reviews__item">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более
+              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали
+              более
               стильными, а также набирают больше лайков!
             </p>
             <cite class="reviews__user">Анастасия Красильникова</cite>
@@ -157,8 +167,12 @@
         <iframe class="contacts__map-iframe"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A356553a58019fc9e1177ca2bcdba691f6982ab320a30ca4aa89cfadcb208ff2c&amp;source=constructor"
           width="100%" height="457" frameborder="0"></iframe>
-        <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="320" height="457"
-          alt="Мы находимся по адресу Санкт-Петербург, Большая Конюшенная, 19/8, офис 101">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
+            height="457" alt="Мы находимся по адресу Санкт-Петербург, Большая Конюшенная, 19/8, офис 101">
+        </picture>
       </div>
       <a class="contacts__write-us button button--brown" href="#">Напишите нам</a>
     </section>
