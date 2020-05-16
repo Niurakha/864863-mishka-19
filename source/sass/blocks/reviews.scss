@@ -27,6 +27,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,6 +101,17 @@
   @include font(17px, 400, 30px);
   display: block;
   color: $greyish-brown;
+
+  &:hover,
+  &:focus {
+    color: $mediumTurquoise;
+    outline: none;
+  }
+
+  &:active {
+    color: $mediumTurquoise;
+    opacity: 0.3;
+  }
 }
 
 .reviews__buttons {

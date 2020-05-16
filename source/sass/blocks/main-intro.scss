@@ -64,7 +64,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1150px;
+    max-width: 1150px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -97,8 +98,7 @@
     background-color: $seafoam-blue;
 
     .main-intro__link {
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $turquoise;
         height: 108px;
         padding-bottom: 5px;
@@ -110,10 +110,10 @@
     background-color: $greeny-blue;
 
     .main-intro__link {
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $mediumTurquoise;
         height: 108px;
+        margin-bottom: 5px;
         padding-bottom: 5px;
       }
     }

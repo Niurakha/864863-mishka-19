@@ -22,15 +22,34 @@
   width: 100px;
   padding: 21px 5px 23px;
   margin: 0 auto;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 115px;
     margin-top: -36px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 10px 0;
+    width: 150px;
     order: 1;
     margin: 0;
   }
+}
+
+.page-header__logo-image {
+  width: 100%;
 }
