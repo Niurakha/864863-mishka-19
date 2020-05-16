@@ -8,10 +8,7 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-  }
-
-  @media (min-width: 988px) {
-    width: 500px;
+    width: 53%;
   }
 
   &--closed {
@@ -24,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
-    width: 350px;
+    width: 385px;
   }
 }
 
