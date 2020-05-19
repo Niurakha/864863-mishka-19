@@ -11,10 +11,13 @@
 
 .page-footer__wrapper {
   @media (min-width: $tablet-width) {
+    min-width: 668px;
     display: flex;
     justify-content: space-between;
     min-height: 143px;
+    height: 143px;
     padding-top: 0;
+    align-items: center;
 
     @media (min-width: $desktop-width) {
       width: 1050px;
@@ -27,20 +30,57 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__link {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+
+    &[href]:hover,
+    &[href]:focus {
+      fill: $mediumTurquoise;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
     margin-right: 80px;
+    align-self: center;
+    width: 102px;
+    height: 40px;
   }
 }
 
 .page-footer__social {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: " ";
+    width: 260px;
+    height: 1px;
+    background-color: $grey;
+    bottom: -17px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 

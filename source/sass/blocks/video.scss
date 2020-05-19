@@ -45,7 +45,8 @@
 
 .video__logo {
   margin-right: 24px;
-  min-width: 32px;
+  width: 32px;
+  height: 32px;
   fill: $seafoam-blue;
 
   @media (min-width: $tablet-width) {

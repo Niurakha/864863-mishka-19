@@ -44,10 +44,26 @@
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
     margin-bottom: 48px;
+    position: relative;
+
+    &::after {
+      content: " ";
+      background-image: url("../img/icon-flag.svg");
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      right: 3px;
+      top: -15px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include font(52px, 700, 57px);
+
+    &::after {
+      left: -108px;
+      top: -10px;
+    }
   }
 }
 
