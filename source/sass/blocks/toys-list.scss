@@ -87,6 +87,7 @@
   transition: box-shadow 0.3s ease;
   border: 1px solid $grey;
   padding: 24px 26px 28px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -160,5 +161,28 @@
       top: -23px;
       width: 273px;
     }
+  }
+}
+
+.toys-list__cart {
+  display: block;
+  position: absolute;
+  right: 26px;
+  bottom: 27px;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 31px;
+    bottom: 25px;
   }
 }

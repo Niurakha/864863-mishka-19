@@ -1,4 +1,6 @@
 .form__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 auto;
@@ -105,13 +107,17 @@
     }
 
     .form__wrapper {
-      padding-top: 44px;
+      padding-top: 45px;
     }
   }
 
   @media (min-width: $desktop-width) {
     .form__legend {
       padding-top: 22px;
+    }
+
+    .form__wrapper {
+      padding-top: 42px;
     }
   }
 }
@@ -153,15 +159,6 @@
     opacity: 0.3;
   }
 
-  &:hover {
-    border-color: $darkSeaGreen;
-  }
-
-  &:focus {
-    border-color: $darkSeaGreen;
-    outline: none;
-  }
-
   @media (min-width: $tablet-width) {
     @include font(19px, 400, 18px);
     background-color: inherit;
@@ -178,8 +175,6 @@
     width: 700px*100%/1050px;
   }
 }
-
-// .form__phone-input--icon {}
 
 .form__fieldset-email {
   @include fieldset-reset;
@@ -203,7 +198,7 @@
     }
 
     .form__legend {
-      padding-top: 22px;
+      padding-top: 25px;
     }
   }
 }
@@ -224,15 +219,6 @@
     opacity: 0.3;
   }
 
-  &:hover {
-    border-color: $darkSeaGreen;
-  }
-
-  &:focus {
-    border-color: $darkSeaGreen;
-    outline: none;
-  }
-
   @media (min-width: $tablet-width) {
     @include font(19px, 400, 18px);
     background-color: inherit;
@@ -249,7 +235,55 @@
   }
 }
 
-// .form__email-input--icon {}
+.form__input {
+  &:hover,
+  &:focus {
+    border-color: $darkSeaGreen;
+    outline: none;
+
+    + .form__input-icon {
+      fill: $darkSeaGreen;
+      opacity: 1;
+    }
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 34px;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+
+  &--tel {
+    width: 25px;
+    height: 25px;
+    right: 37px;
+
+    @media (min-width: $tablet-width) {
+      right: 76px;
+      top: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 183px;
+    }
+  }
+
+  &--email {
+    width: 32px;
+    height: 32px;
+    right: 34px;
+
+    @media (min-width: $tablet-width) {
+      right: 72px;
+      top: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 179px;
+    }
+  }
+}
 
 .form__fieldset-letter {
   @include fieldset-reset;
@@ -285,15 +319,6 @@
     @include font(17px, 400, 18px);
     color: $greyish-brown;
     opacity: 0.3;
-  }
-
-  &:hover {
-    border-color: $darkSeaGreen;
-  }
-
-  &:focus {
-    border-color: $darkSeaGreen;
-    outline: none;
   }
 
   @media (min-width: $tablet-width) {

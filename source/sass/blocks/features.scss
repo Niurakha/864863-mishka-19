@@ -1,15 +1,15 @@
 .features {
-  padding-top: 69px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding-top: 117px;
+    padding-top: 50px;
     padding-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
     width: 710px;
-    padding-top: 155px;
+    padding-top: 59px;
     padding-bottom: 46px;
   }
 }
@@ -43,9 +43,76 @@
 .features__item {
   @include font (17px, 700, 20px);
   margin-bottom: 83px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--eco::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    top: -53px;
+    left: 8px;
+    width: 32px;
+    height: 38px;
+  }
+
+  &--nordic::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    top: -52px;
+    left: 0;
+    width: 47px;
+    height: 28px;
+  }
+
+  &--likes::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    top: -47px;
+    left: 8px;
+    width: 34px;
+    height: 28px;
+  }
+
+  &--handmade::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    top: -50px;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+  }
+
+  &--domestic::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    top: -49px;
+    left: -6px;
+    width: 55px;
+    height: 24px;
+  }
+
+  &--pack::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    top: -51px;
+    left: 3px;
+    width: 33px;
+    height: 33px;
   }
 
   @media (min-width: $tablet-width) {
@@ -56,26 +123,50 @@
 
     &--eco {
       order: -6;
+
+      &::before {
+        top: 13px;
+      }
     }
 
     &--nordic {
       order: -4;
+
+      &::before {
+        top: 14px;
+      }
     }
 
     &--likes {
       order: -2;
+
+      &::before {
+        top: 19px;
+      }
     }
 
     &--handmade {
       order: -5;
+
+      &::before {
+        top: 16px;
+      }
     }
 
     &--domestic {
       order: -3;
+
+      &::before {
+        top: 17px;
+      }
     }
 
     &--pack {
       order: -1;
+
+      &::before {
+        top: 15px;
+      }
     }
 
     &:nth-last-child(-n+2) {
@@ -86,5 +177,41 @@
   @media (min-width: $desktop-width) {
     padding-left: 5px;
     margin-right: 31px;
+
+    &--eco {
+      &::before {
+        left: 13px;
+      }
+    }
+
+    &--nordic {
+      &::before {
+        left: 6px;
+      }
+    }
+
+    &--likes {
+      &::before {
+        left: 14px;
+      }
+    }
+
+    &--handmade {
+      &::before {
+        left: 7px;
+      }
+    }
+
+    &--domestic {
+      &::before {
+        left: -2px;
+      }
+    }
+
+    &--pack {
+      &::before {
+        left: 7px;
+      }
+    }
   }
 }

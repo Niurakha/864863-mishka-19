@@ -13,7 +13,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -30,6 +29,10 @@
   @media (min-width: $desktop-width) {
     width: 156px;
     margin-right: 10px;
+
+    &:first-child {
+      border-right: 1px solid $grey;
+    }
   }
 }
 
@@ -46,11 +49,11 @@
   &:hover,
   &:focus {
     outline: none;
-    opacity: 0.6;
+    color: $black-60;
   }
 
   &:active {
-    opacity: 0.3;
+    color: $black-30;
   }
 
   @media (min-width: $tablet-width) {
