@@ -11,6 +11,9 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -20,6 +23,7 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
+    .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -62,6 +66,26 @@ gulp.task("html", function () {
     .src("source/*.html")
     .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("images", function () {
+  return gulp
+    .src("source/img/**/*.{png, jpg, svg}")
+    .pipe(
+      imagemin([
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.mozjpeg({ progressive: true }),
+        imagemin.svgo(),
+      ])
+    )
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("webp", function () {
+  return gulp
+    .src("source/img/**/*.{png, jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("copy", function () {
