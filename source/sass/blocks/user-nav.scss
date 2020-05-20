@@ -1,6 +1,6 @@
 .user-nav {
-  min-height: 130px;
-  height: 130px;
+  min-height: 158px;
+  height: 158px;
 
   @media (min-width: $tablet-width) {
 
@@ -9,6 +9,8 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    min-height: 130px;
+    height: 130px;
     width: 53%;
     z-index: 1;
   }
@@ -47,16 +49,36 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
-    border-left: 1px solid $grey;
   }
 
   &--search {
     @media (min-width: $tablet-width) {
       width: 85px;
+      min-width: 85px;
+      position: relative;
 
       .user-nav__link {
         padding: 20px 0 21px 0;
         height: 100%;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 90px;
+        width: 1px;
+        background-color: $grey;
+        left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 90px;
+        width: 1px;
+        background-color: $grey;
+        right: 0;
+        top: 0;
       }
     }
   }

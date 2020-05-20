@@ -10,7 +10,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     width: 315px;
+    min-height: 55px;
+    height: 55px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
