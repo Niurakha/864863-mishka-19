@@ -15,22 +15,6 @@
     margin: 0;
   }
 
-  &__toggle {
-    background-repeat: no-repeat;
-    background-position: 50%;
-    position: absolute;
-    top: 18px;
-    right: 21px;
-    width: 40px;
-    height: 40px;
-    border: 0;
-    background-color: transparent;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
   &--closed {
     .main-nav__toggle {
       background-image: url("../img/icon-menu-open.svg");
@@ -47,6 +31,22 @@
     .main-nav__toggle {
       background-image: url("../img/icon-menu-close.svg");
     }
+  }
+}
+
+.main-nav__toggle {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
