@@ -87,7 +87,7 @@
   }
 }
 
-.contacts__email span {
+.contacts__email-legend {
   margin-right: 25px;
 
   @media (min-width: $tablet-width) {
@@ -134,7 +134,7 @@
   }
 }
 
-.contacts__address span {
+.contacts__address-legend {
   margin-right: 30px;
 
   @media (min-width: $tablet-width) {
@@ -163,6 +163,10 @@
     right: 0;
     margin-bottom: 0;
   }
+}
+
+.contacts__map-iframe {
+  border: none;
 }
 
 .contacts__map-image {
