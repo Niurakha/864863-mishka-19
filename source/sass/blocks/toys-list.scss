@@ -47,7 +47,6 @@
 .toys-list__item-link {
   display: block;
 
-
   &:focus,
   &:hover {
     outline: none;
@@ -87,13 +86,12 @@
   transition: box-shadow 0.3s ease;
   border: 1px solid $grey;
   padding: 24px 26px 28px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 25px 25px 26px 29px;
+    padding: 25px 25px 26px 27px;
     min-height: 332px;
   }
 
@@ -138,6 +136,16 @@
   }
 }
 
+.toys-list__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 6px;
+  }
+}
+
 .toys-list__price {
   position: relative;
 
@@ -156,19 +164,20 @@
 
   @media (min-width: $tablet-width) {
     @include font(17px, 700, 24px);
+    padding-left: 4px;
 
     &::before {
       top: -23px;
       width: 273px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .toys-list__cart {
-  display: block;
-  position: absolute;
-  right: 26px;
-  bottom: 27px;
   opacity: 0.2;
 
   &:hover,
@@ -179,10 +188,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    right: 31px;
-    bottom: 25px;
   }
 }

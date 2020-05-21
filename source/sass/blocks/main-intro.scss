@@ -113,7 +113,7 @@
 .main-intro__item {
   display: flex;
   align-items: center;
-  min-height: 103px;
+  height: 103px;
 
   &--interior {
     background-color: $seafoam-blue;
@@ -121,7 +121,7 @@
     .main-intro__link {
       &:hover {
         background-color: $turquoise;
-        min-height: 108px;
+        height: 108px;
         padding-bottom: 5px;
       }
     }
@@ -133,7 +133,7 @@
     .main-intro__link {
       &:hover {
         background-color: $mediumTurquoise;
-        min-height: 108px;
+        height: 108px;
         margin-bottom: 5px;
         padding-bottom: 5px;
       }
@@ -142,17 +142,17 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    min-height: 119px;
+    height: 119px;
 
     &--interior {
       &:hover {
-        min-height: 124px;
+        height: 124px;
       }
     }
 
     &--toys {
       &:hover {
-        min-height: 124px;
+        height: 124px;
       }
     }
   }
