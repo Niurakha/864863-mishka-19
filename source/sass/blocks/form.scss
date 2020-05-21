@@ -244,13 +244,12 @@
 }
 
 .form__input {
-
   &:hover,
   &:focus {
     border-color: $darkSeaGreen;
     outline: none;
 
-    +.form__input-icon {
+    + .form__input-icon {
       fill: $darkSeaGreen;
       opacity: 1;
     }
