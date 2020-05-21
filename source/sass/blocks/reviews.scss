@@ -31,7 +31,7 @@
 
 
     @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
@@ -66,6 +66,10 @@
   @include font(25px, 700, 30px);
   margin: 0;
   margin-bottom: 23px;
+
+  &::first-letter {
+    margin-left: -4px; //удаляет отступ у заголовков Open Sans
+  }
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);

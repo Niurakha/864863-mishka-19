@@ -46,11 +46,14 @@
 }
 
 .promo__title {
-  padding: 0;
-  color: $black;
-  margin-bottom: 6px;
-
   @include font(25px, 700, 30px);
+  padding: 0;
+  margin-bottom: 6px;
+  color: $black;
+
+  &::first-letter {
+    margin-left: -4px; //удаляет отступ у заголовков Open Sans
+  }
 
   @media (min-width: $tablet-width) {
     @include font(43px, 700, 50px);
