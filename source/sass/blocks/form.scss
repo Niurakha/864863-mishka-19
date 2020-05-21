@@ -153,10 +153,14 @@
   color: $greyish-brown;
   transition: border-color 0.3s ease;
 
+  &:-ms-input-placeholder {
+    //для IE
+    color: $silver;
+  }
+
   &::placeholder {
     @include font(19px, 400, 18px);
-    color: $greyish-brown;
-    opacity: 0.3;
+    color: $silver;
   }
 
   @media (min-width: $tablet-width) {
@@ -213,10 +217,14 @@
   color: $greyish-brown;
   transition: border-color 0.3s ease;
 
+  &:-ms-input-placeholder {
+    //для IE
+    color: $silver;
+  }
+
   &::placeholder {
     @include font(17px, 400, 18px);
-    color: $greyish-brown;
-    opacity: 0.3;
+    color: $silver;
   }
 
   @media (min-width: $tablet-width) {
@@ -236,12 +244,13 @@
 }
 
 .form__input {
+
   &:hover,
   &:focus {
     border-color: $darkSeaGreen;
     outline: none;
 
-    + .form__input-icon {
+    +.form__input-icon {
       fill: $darkSeaGreen;
       opacity: 1;
     }
@@ -315,10 +324,14 @@
   color: $greyish-brown;
   transition: border-color 0.3s ease;
 
+  &:-ms-input-placeholder {
+    //для IE
+    color: $silver;
+  }
+
   &::placeholder {
     @include font(17px, 400, 18px);
-    color: $greyish-brown;
-    opacity: 0.3;
+    color: $silver;
   }
 
   @media (min-width: $tablet-width) {

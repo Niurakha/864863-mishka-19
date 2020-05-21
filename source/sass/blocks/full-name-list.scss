@@ -48,10 +48,13 @@
   color: $greyish-brown;
   transition: border-color 0.3s ease;
 
+  &:-ms-input-placeholder { //для IE
+    color: $silver;
+  }
+
   &::placeholder {
     @include font(17px, 400, 18px);
-    color: $greyish-brown;
-    opacity: 0.3;
+    color: $silver;
   }
 
   &:hover {
