@@ -3,9 +3,13 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 186px;
+    width: 50%;
     padding-top: 8px;
   }
+}
+
+.social__item {
+  margin-right: 8px;
 }
 
 .social__list {
@@ -15,16 +19,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 191px;
+  justify-content: center;
+  width: 73%;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    width: 100%;
   }
 }
 
 .social__link {
   display: block;
-  padding: 10px 21px;
+  padding: 10px 16px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
